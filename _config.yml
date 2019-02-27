@@ -1,0 +1,22 @@
+collections:
+  authors:
+    output: true
+    permalink: /:collection/:name
+
+permalink: /:title.html   
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
